@@ -9,33 +9,29 @@ import { Code, Database, FileCode, FileSpreadsheet, Layers } from "lucide-react"
 const skills = [
   // Techniques
   { name: "Machine Learning", category: "techniques" },
+  { name: "Deep Learning", category: "techniques" }
   { name: "NLP", category: "techniques" },
-  { name: "Clustering", category: "techniques" },
-  { name: "Classification Models", category: "techniques" },
-  { name: "Feature Selection", category: "techniques" },
   { name: "Statistical Modeling", category: "techniques" },
-  { name: "Data Processing", category: "techniques" },
+  { name: "Feature Selection", category: "techniques" },
+  { name: "Data Preprocessing", category: "techniques" },
   { name: "ETL", category: "techniques" },
-  { name: "Data Transformation", category: "techniques" },
   { name: "Data Analysis", category: "techniques" },
 
-  // Programming Languages
+  // Programming Languages/Libary
   { name: "Python", category: "programming" },
   { name: "Scikit-learn", category: "programming" },
   { name: "TensorFlow", category: "programming" },
   { name: "PyTorch", category: "programming" },
   { name: "Flask", category: "programming" },
   { name: "SQL", category: "programming" },
-  { name: "MySQL", category: "programming" },
-  { name: "BigQuery", category: "programming" },
+  { name: "Streamlit", category: "programming" },
 
   // Tools
+  { name: "Microsoft Excel", category: "tools" },
   { name: "Tableau", category: "tools" },
-  { name: "Jupyter Notebook", category: "tools" },
   { name: "Git", category: "tools" },
   { name: "Docker", category: "tools" },
-  { name: "Power BI", category: "tools" },
-  { name: "Streamlit", category: "tools" },
+  { name: "Power BI", category: "tools" }
 ] as const
 
 // Define the achievements data
@@ -80,35 +76,35 @@ const certifications = [
     title: "Microsoft Certified: Azure Data Scientist Associate",
     issuer: "Microsoft",
     date: "June 2024 - present",
-    url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-scientist/",
+    url: "https://learn.microsoft.com/api/credentials/share/en-us/RoissyahFernanda-1870/1F00FCD0E4125409?sharingId=6E78F0C8F14683A1",
     icon: <Database className="h-6 w-6" />,
   },
   {
     title: "Google Certified TensorFlow Developer",
     issuer: "Google",
     date: "Oct 2023 - present",
-    url: "https://www.tensorflow.org/certificate",
+    url: "https://www.credential.net/18ca281c-e4f3-488a-876b-fa279fa7319b?record_view=true",
     icon: <Code className="h-6 w-6" />,
   },
   {
     title: "Microsoft Certified: Azure Data Fundamentals",
     issuer: "Microsoft",
     date: "2023",
-    url: "https://learn.microsoft.com/en-us/credentials/certifications/azure-data-fundamentals/",
+    url: "https://learn.microsoft.com/api/credentials/share/en-us/RoissyahFernanda-1870/6F4F548BC703426D?sharingId=6E78F0C8F14683A1",
     icon: <FileSpreadsheet className="h-6 w-6" />,
   },
   {
     title: "DeepLearning.AI Natural Language Processing Specialization",
     issuer: "DeepLearning.AI",
     date: "2023",
-    url: "https://www.deeplearning.ai/courses/natural-language-processing-specialization/",
+    url: "https://coursera.org/share/81a4d80a4cbe2acbd8716306df99c717",
     icon: <FileCode className="h-6 w-6" />,
   },
   {
     title: "DeepLearning.AI Machine Learning Specialization",
     issuer: "DeepLearning.AI",
     date: "2023",
-    url: "https://www.deeplearning.ai/courses/machine-learning-specialization/",
+    url: "https://www.coursera.org/account/accomplishments/specialization/4LV3TZZVR4ZT",
     icon: <Layers className="h-6 w-6" />,
   },
 ]

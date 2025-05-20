@@ -22,7 +22,7 @@ export default function Home() {
             typingSpeed={80}
           />
           <p className="max-w-[600px] text-muted-foreground">
-            Recent Statistics graduate with hands-on experience in building predictive models, developing interactive
+            Statistics graduate with hands-on experience in building predictive models, developing interactive
             dashboards, and automating data-driven processes.
           </p>
           <div className="flex flex-col gap-3 pt-4 sm:flex-row">
@@ -36,7 +36,7 @@ export default function Home() {
         </div>
         <div className="relative h-60 w-60 overflow-hidden rounded-full border-4 border-primary md:h-80 md:w-80">
           <Image
-            src="/placeholder.svg?height=320&width=320"
+            src="/myself-opt1.jpg?height=320&width=320"
             alt="Roissyah Fernanda Khoiroh"
             fill
             className="object-cover"
@@ -51,7 +51,7 @@ export default function Home() {
         <SectionHeading title="Key Achievements" description="Highlights of my academic and professional journey" />
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <AchievementCard title="GPA" value="3.89/4.0" icon={<GraduationCap />} />
-          <AchievementCard title="Awards" value="5+" icon={<Award />} />
+          <AchievementCard title="Awards" value="4+" icon={<Award />} />
           <AchievementCard title="Projects" value="10+" icon={<BarChart />} />
         </div>
       </section>
@@ -62,12 +62,12 @@ export default function Home() {
         <Card>
           <CardContent className="p-6">
             <p className="mb-4">
-              I am a recent Statistics graduate with a passion for data science and machine learning. My expertise
+              I am a Statistics graduate with a passion for data science and machine learning. My expertise
               includes building predictive models, developing interactive dashboards, and automating data-driven
               processes.
             </p>
             <p className="mb-4">
-              I am proficient in machine learning techniques such as NLP, clustering, and classification, as well as
+              I am proficient in machine learning techniques such as NLP, clustering, regression and classification, as well as
               feature selection, statistical modeling, and data processing. I leverage Python, Tableau, and Streamlit to
               extract actionable insights from data.
             </p>
@@ -108,7 +108,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                     className="hover:text-primary"
                   >
-                    linkedin.com/in/
+                    linkedin.com/in/roissyahfernanda
                   </a>
                 </p>
               </div>
