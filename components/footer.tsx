@@ -38,11 +38,11 @@ export function Footer() {
               <Github className="h-5 w-5" />
             </Link>
             <Link
-              href="https://medium.com/@roisyahfernanda"
+              href="https://public.tableau.com/app/profile/roissyahfernanda/vizzes"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground transition-colors hover:text-foreground"
-              aria-label="Medium"
+              aria-label="Tableau"
             >
               <ExternalLink className="h-5 w-5" />
             </Link>

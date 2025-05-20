@@ -10,43 +10,43 @@ export interface Featured {
 
 export const featuredItems: Featured[] = [
   {
-    title: "Google AI for the Golden Generation of Indonesia",
+    title: "Ukir Prestasi melalui Kuliah Online di UT, Keterbatasan Bukan Penghalang Raih Kesuksesan",
     description:
-      "Delivered a speech at the Google AI for the Golden Generation of Indonesia event, sharing insights on AI applications and opportunities in Indonesia.",
-    image: "/placeholder.svg?height=400&width=600",
-    url: "https://example.com/google-ai-event",
+        "Check out the highlights of my university graduation, a special moment where I received appreciation from the university and becoming the graduate representative.",
+    image: "/featured/article-radarjember.jpg?height=400&width=600",
+    url: "https://radarjember.jawapos.com/sinergi/795342102/ukir-prestasi-melalui-kuliah-online-di-ut-keterbatasan-bukan-penghalang-raih-kesuksesan#google_vignette",
+    type: "Article",
+    date: "Nov 2024",
+    source: "Radar Jember JAWAPOS",
+  },
+  {
+    title: "Google AI untuk Indonesia Emas",
+    description:
+        "A discussion on the role of Google AI in supporting Indonesia's development, featuring insights from the Bangkit Academy program.",
+    image: "/featured/event-googleai.jpg?height=400&width=600",
+    url: "https://www.youtube.com/live/_R0vbfxcCL4?si=RIjDMfexhG1SS6mG&t=3576",
     type: "Event",
     date: "June 2024",
     source: "Google Indonesia",
   },
   {
-    title: "International Women's Day 2024 with Google Indonesia",
+    title: "How to Enhance Your Statistical Skills",
     description:
-      "Collaborated with Google Indonesia on the International Women's Day 2024 initiative, promoting women in technology and data science.",
-    image: "/placeholder.svg?height=400&width=600",
-    url: "https://example.com/iwd-2024",
+        "During the session, I presented an introduction to data science and provided learning strategies for UT students. The Q&A period proved highly engaging, with enthusiastic participation and discussion.",
+    image: "/featured/event-statistika.jpg?height=400&width=600",
+    url: "https://youtu.be/hapPJgTc24w?si=SnMSfrwLsXVxS0aa&t=1389",
     type: "Event",
-    date: "March 2024",
-    source: "Google Indonesia",
+    date: "June 2024",
+    source: "HIMA Statistika UT",
   },
   {
-    title: "The Future of Data Science in Indonesia",
+    title: "My Physical Condition Is Not a Barrier to My Ambition",
     description:
-      "An article discussing the growing importance of data science in Indonesia and future opportunities in the field.",
-    image: "/placeholder.svg?height=400&width=600",
-    url: "https://example.com/data-science-indonesia",
+        "Thrilled to share my story on the Bangkit Blog about embracing lifelong learning and its impact on my growth. Get inspired - you never know where your next adventure might take you!",
+    image: "/featured/article-bangkitblog.jpg?height=400&width=600",
+    url: "https://blog.bangkit.academy/2024/02/my-physical-condition-is-not-barrier-to.html",
     type: "Article",
-    date: "April 2024",
-    source: "Medium",
-  },
-  {
-    title: "Machine Learning for Healthcare: A Case Study",
-    description:
-      "An article exploring the application of machine learning techniques in healthcare, with a focus on the JKN Mobile application.",
-    image: "/placeholder.svg?height=400&width=600",
-    url: "https://example.com/ml-healthcare",
-    type: "Article",
-    date: "February 2024",
-    source: "Towards Data Science",
+    date: "Feb 2024",
+    source: "Bangkit Academy Blog",
   },
 ]

@@ -28,7 +28,7 @@ export function InteractiveSkills({ skills }: InteractiveSkillsProps) {
   const categories: { value: SkillCategory; label: string }[] = [
     { value: "all", label: "All" },
     { value: "techniques", label: "Techniques" },
-    { value: "programming", label: "Programming Languages" },
+    { value: "programming", label: "Programming Languages/Libraries" },
     { value: "tools", label: "Tools" },
   ]
 
