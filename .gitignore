@@ -36,3 +36,6 @@ next-env.d.ts
 /.cache
 /.parcel-cache
 /.swc
+
+# Asset
+/public
