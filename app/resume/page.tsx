@@ -9,7 +9,7 @@ import { Code, Database, FileCode, FileSpreadsheet, Layers } from "lucide-react"
 const skills = [
   // Techniques
   { name: "Machine Learning", category: "techniques" },
-  { name: "Deep Learning", category: "techniques" }
+  { name: "Deep Learning", category: "techniques" },
   { name: "NLP", category: "techniques" },
   { name: "Statistical Modeling", category: "techniques" },
   { name: "Feature Selection", category: "techniques" },
