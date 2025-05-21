@@ -13,14 +13,13 @@ export interface Project {
   date: string // Month, Year format
   fullDescription: string // Now supports markdown
   background: string // Now supports markdown
-  objectives: string[] // Keep as is
-  tools: string[] // Keep as is
-  dataSource: string // Keep as is
-  dataSourceUrl?: string // Keep as is
+  objectives: string[] 
+  tools: string[] 
+  dataSource: string 
+  dataSourceUrl?: string 
   methodology: string // Now supports markdown
-  links: ProjectLink[] // Keep as is
+  links: ProjectLink[] 
   conclusion: string // Now supports markdown
-  //assets: string[] // Keep as is, but we'll add a new markdown section for flexible assets
   assetsContent?: string // New field for markdown-based assets content
 }
 
@@ -28,36 +27,30 @@ export const projects: Project[] = [
   // JKN Mobile Project
   {
     id: "jkn-mobile-sentiment",
-    title: "Understanding JKN Mobile User Experiences",
+    title: "Understanding JKN Mobile User Experiences: A Sentiment Analysis and Topic Modeling Approach",
     description:
       "A Sentiment Analysis and Topic Modeling Approach to analyze user feedback and improve the JKN Mobile application.",
     image: "/projects/mixed-jknm/cover-jknmobile.jpg?height=400&width=600",
-    tags: ["NLP", "Sentiment Analysis", "Topic Modeling", "Python"],
+    tags: ["Sentiment Analysis", "Topic Modeling", "JKN Mobile App", "User Experience"],
     categories: ["deep-learning", "visualization"],
     date: "October 2024",
     fullDescription: `
 ## Overview
 
-Analyzed 27,000+ JKN Mobile user feedback, identifying key sentiments and concerns using Python and NLP (LDA), achieving 80% sentiment classification accuracy, uncovering 3 key user concerns, and driving actionable product enhancements.
+Analyzed 27,000+ JKN Mobile user feedback, identifying key sentiments and concerns using Python and NLP (LDA), uncovering 3 key user concerns, and driving actionable product enhancements.
 
 ### Key Achievements
 - **3 Key User Concerns Identified**: Discovered the most pressing issues affecting user experience
 - **Actionable Insights**: Provided specific recommendations that led to product improvements
 
-The analysis involved processing large volumes of text data from app store reviews and applying NLP techniques to extract meaningful patterns.
     `,
     background: `
+
+## Background
 The JKN Mobile app is a digital platform designed to facilitate access to National Health Insurance (BPJS Kesehatan) services. It offers various features, including checking insurance status, finding healthcare providers, and managing claims.
 
 Despite the JKN Mobile app's 4.3 rating on the Play Store, there are anecdotal reports of user dissatisfaction and challenges, such as difficulties in creating accounts and receiving OTP codes. This project seeks to systematically investigate these issues and identify areas for improvement.
 
-### Problem Statement
-
-1. The application had received thousands of reviews across multiple platforms
-2. Manual analysis was time-consuming and potentially biased
-3. There was no clear prioritization of which issues to address first
-
-This project aimed to solve these challenges by applying NLP techniques to objectively analyze user feedback at scale.
     `,
     objectives: [
       "Analyze user sentiments towards the JKN Mobile application",
@@ -68,6 +61,8 @@ This project aimed to solve these challenges by applying NLP techniques to objec
     dataSource: "27,000+ user reviews from Google Play Store and App Store",
     dataSourceUrl: "https://play.google.com/store/apps/details?id=app.bpjs.mobile",
     methodology: `
+
+## Methodology
 1. Data Collection: Scraping user reviews from Google Playstore using 'google-play-scraper' library.
 2. Data Cleaning: Remove duplicate reviews, handle missing value.
 3. Text Cleansing: Remove punctuations, emoji, stopwords, handle slang words, ensuring the text is clean to proceed further.
@@ -79,12 +74,14 @@ This project aimed to solve these challenges by applying NLP techniques to objec
 9. Create narrative report: Present the findings and comprehensive analysis in a narrative format, published in medium.
 `,
     links: [
-      { title: "View Code", url: "https://github.com/roissyahf/JKN-Mobile-2024" },
+      { title: "Repository", url: "https://github.com/roissyahf/JKN-Mobile-2024" },
       { title: "Project Report", url: "https://medium.com/@roissyahfernanda/understanding-jkn-mobile-user-experiences-a-sentiment-analysis-and-topic-modeling-approach-9f0b6d9f8177"},
-      { title: "Interactive Dashboard", url: "https://jkn-mobile-reviews-2024.streamlit.app/" },
+      { title: "Streamlit Dashboard", url: "https://jkn-mobile-reviews-2024.streamlit.app/" },
     ],
     conclusion: `
 ## Results & Insights
+
+![Topic Distribution](/projects/mixed-jknm/topic_dist.png?height=400&width=600)
 
 The most frequently discussed topic among JKN Mobile users was the difficulty of registering and logging in due to OTP code errors. This issue was prevalent in negative reviews, indicating a poor user experience. Bigrams and trigrams also supported this finding, with users mentioning the challenges of waiting for OTP codes and attempting multiple registrations without success.
 
@@ -113,19 +110,21 @@ To enhance user satisfaction and address the identified issues, the following re
   // Congestion Forecasting Project
   {
     id: "congestion-forecasting",
-    title: "Leveraging Machine Learning for Congestion Level Forecasting",
+    title: "Leveraging Machine Learning for Congestion Level Prediction at 10 AI-Powered ITCS Intersections",
     description:
       "Built a traffic congestion forecasting model for 10 AI-powered ITCS intersections using clustering, regression, and classification algorithms.",
     image: "/projects/mixed-trafficc/cover-trafficcongestion.jpg?height=400&width=600",
-    tags: ["Machine Learning", "Clustering", "Regression", "Classification", "Streamlit"],
+    tags: ["Clustering", "Regression", "Classification", "Streamlit"],
     categories: ["machine-learning", "team-project", "applications"],
     date: "August 2023",
     fullDescription: `
-## Project Summary
+## Overview
 
-Built a traffic congestion forecasting model using clustering, regression, and classification algorithms on 1600+ traffic data points from HERE Maps API, achieving 94% prediction accuracy and enabling proactive congestion management through a user-accessible Streamlit app.
+Built a traffic congestion forecasting model using ML algorithms on 1600+ traffic data points from HERE Maps API, achieving 94% prediction accuracy and enabling proactive congestion management through a user-accessible Streamlit app.
     `,
     background: `
+
+## Background
 Since May 2023, Jakarta has consistently featured among the top 10 most polluted cities globally according to the Air Quality Index, even peaking at number one in August.
 
 In response to chronic traffic congestion, the Jakarta Provincial Government has implemented several initiatives, the most recent being an AI-driven Intelligent Traffic Control System (ITCS) developed in collaboration with Google under the Greenlight project. This system adjusts traffic light durations dynamically based on real-time traffic volume at intersections.
@@ -139,6 +138,8 @@ In response to chronic traffic congestion, the Jakarta Provincial Government has
     dataSourceUrl: "https://www.here.com/platform/map-data",
     methodology: `
 ## Methodology
+![Workflow](/projects/mixed-trafficc/workflow.png?height=400&width=600)
+
 1. Scrap data from HERE MAPS API
 2. Data Preprocessing
 3. Exploratory Data Analysis
@@ -150,14 +151,93 @@ In response to chronic traffic congestion, the Jakarta Provincial Government has
 9. Streamlit for deployment
     `,
     links: [
-      { title: "View Code", url: "https://github.com/roissyahf/RISTEK-DATATHON-2023" },
-      { title: "View Streamlit App", url: "https://predict-cluster-lalu-lintas-h4xargbrrbqhfuugi9tebb.streamlit.app/" },
+      { title: "Repository", url: "https://github.com/roissyahf/RISTEK-DATATHON-2023" },
+      {title: "Slide", url: "https://docs.google.com/presentation/d/1ThTUvI5wI1SNfdvVmsAxPVwwkUXCU8yiWnPdQEraCy8/edit?usp=sharing"},
+      { title: "Streamlit App", url: "https://predict-cluster-lalu-lintas-h4xargbrrbqhfuugi9tebb.streamlit.app/" },
     ],
     conclusion: `
+## Results
+The following visualization and tables were created to help understand and communicate the findings:
+    
+**Travel Time Boxplot by Clusters**
+![Cluster-Interpretation](/projects/mixed-trafficc/cluster-formed.png?height=400&width=600)
+
+**Regression Model Performance**
+| Model | CV SMAPE | CV MSE |
+|---------|-----------------|--------------|
+| Random Forest | 1.727 | 4.217 |
+| Random Forest Tuning | 1.719 | 4.212 |
+| XGBoost | 1.729 | 4.268 |
+| XGBoost Tuning | 1.714 | 4.121 |
+
+**Classification Model Performance**
+| Model | Accuracy | Recall | Precision | F1-Score |
+|-------|-------|-------|-------|-------|
+| Random Forest | 94.59% | 94.59% | 94.63% | 94.57% |
+| Random Forest Tuning | 95.65% | 95.65% | 95.65% | 95.63% |
+| XGBoost | 94.76% | 94.76% | 94.81% | 94.74% |
+| XGBoost Tuning | 95.59% | 95.59% | 95.66% | 95.57% |
+
+
 ## Conclusion
 KMeans clustering with a silhouette score of 0.596 effectively categorizes travel times into four groups. Furthermore, XGBoost Regressor Tuning yielded the lowest SMAPE score at 1.714, while XGBoost Classifier Tuning delivered the best performance in congestion level prediction with a precision score of 95.66%.
 
 The most important features in regression and classification models are normal speed, base duration, intersections, and sin hours. The Streamlit app provided an accessible interface for users to access predictions.
+    `,
+  },
+
+// RFM Project
+  {
+    id: "ecommerce-rfm",
+    title: "Leveraging RFM Analysis for Customer Segmentation to Boost Customer Engagement within Olist Brazilian E-Commerce Platform",
+    description:
+      "Segment customers using RFM analysis to enhance marketing strategies and improve customer retention.",
+    image: "/projects/mixed-rfm/cover-rfmanalysis.jpg?height=400&width=600",
+    tags: ["RFM Analysis", "Customer Segmentation", "E-Commerce", "Customer Retention"],
+    categories: ["machine-learning", "visualization"],
+    date: "May 2024",
+    fullDescription: `
+    `,
+    background: `
+
+## Background
+Under the period of February 2017 to August 2018, 96.648% of Olist customers didn’t make a second purchase. Olist Brazilian E-Commerce businesses must modernize their marketing and customer strategies by personalizing them to improve their services, retain customers, and attract new ones.
+
+    `,
+    objectives: [
+      "Conduct customer segmentation according to their recency, frequency, and monetary value",
+"Better understand the characteristics of each segment, then provide a personalized marketing strategy to retain their customers"
+    ],
+    tools: ["Python", "Pandas",  "Tableau"],
+    dataSource: "90,000+ customer purchasing log from Brazilian E-Commerce",
+    dataSourceUrl: "https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce",
+    methodology: `
+
+## Methodology
+1. Define the research questions.
+2. Collect the data.
+3. Clean the data.
+4. Perform Exploratory Data Analysis (EDA).
+5. Perform Feature Preprocessing to create recency, frequency, and monetary value columns.
+6. Create RFM segments using quantiles.
+7. Define RFM segments.
+8. Group RFM segments.
+9. Analyzing RFM segments.
+10. Build a Tableau dashboard.
+`,
+    links: [
+      { title: "Repository", url: "https://github.com/roissyahf/Olist-RFM-Analysis" },
+      { title: "Slide", url: "https://docs.google.com/presentation/d/1nTQDBNtG4U9ZFvQjM8gk6ObrvQitTbaadlBpkZizszo/edit?usp=sharing"},
+      { title: "Tableau Dashboard", url: "https://public.tableau.com/views/RFM_Analysis_17065090987710/story?:language=en-US&:display_count=n&:origin=viz_share_link" },
+    ],
+    conclusion: `
+## Conclusion
+![RFM Segments](/projects/mixed-rfm/rfm-segment.png?height=400&width=600)
+
+- An analysis of 75,389 Olist customers revealed that 35.99% are "lost customers," characterized by long purchase intervals and low order volume. Additionally, 23.5% are classified as "high risk to churn" due to their recent purchase inactivity. In total, a concerning 59.49% of our customers exhibit low engagement with the platform. Given the substantial size of this segment, regaining their interest is crucial.
+- Conversely, 12.40% of customers are identified as "potential customers," signifying recent purchases but minimal spending.
+- The remaining customers are distributed across categories including "new customers," "potential loyalists," "very loyal," and "VIPs," with respective percentages of 9.19%, 8.98%, 6.80%, and 3.12%.
+- While attention should be paid to all segments, prioritizing strategies to retain "lost customers" and those at "high risk to churn" is most pressing.
     `,
   },
 
