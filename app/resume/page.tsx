@@ -25,12 +25,15 @@ const skills = [
   { name: "Flask", category: "programming" },
   { name: "SQL", category: "programming" },
   { name: "Streamlit", category: "programming" },
+  { name: "MLflow", category: "programming" },
 
   // Tools
   { name: "Microsoft Excel", category: "tools" },
   { name: "Tableau", category: "tools" },
   { name: "Git", category: "tools" },
   { name: "Docker", category: "tools" },
+  { name: "Prometheus", category: "tools" },
+  { name: "Grafana", category: "tools" },
   { name: "Power BI", category: "tools" }
 ] as const
 
@@ -77,7 +80,7 @@ const certifications = [
     issuer: "Microsoft",
     date: "June 2024 - present",
     url: "https://learn.microsoft.com/api/credentials/share/en-us/RoissyahFernanda-1870/1F00FCD0E4125409?sharingId=6E78F0C8F14683A1",
-    icon: <Database className="h-6 w-6" />,
+    icon: <Code className="h-6 w-6" />,
   },
   {
     title: "Google Certified TensorFlow Developer",
@@ -91,7 +94,14 @@ const certifications = [
     issuer: "Microsoft",
     date: "2023",
     url: "https://learn.microsoft.com/api/credentials/share/en-us/RoissyahFernanda-1870/6F4F548BC703426D?sharingId=6E78F0C8F14683A1",
-    icon: <FileSpreadsheet className="h-6 w-6" />,
+    icon: <Database className="h-6 w-6" />,
+  },
+  {
+    title: "Google Business Intellegence",
+    issuer: "Google",
+    date: "2024",
+    url: "https://www.coursera.org/account/accomplishments/professional-cert/TEM2UT7UU684?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof",
+    icon: <Layers className="h-6 w-6" />,
   },
   {
     title: "DeepLearning.AI Natural Language Processing Specialization",
@@ -105,6 +115,13 @@ const certifications = [
     issuer: "DeepLearning.AI",
     date: "2023",
     url: "https://www.coursera.org/account/accomplishments/specialization/4LV3TZZVR4ZT",
+    icon: <FileCode className="h-6 w-6" />,
+  },
+  {
+    title: "Google Data Analytics",
+    issuer: "Google",
+    date: "2023",
+    url: "https://www.coursera.org/account/accomplishments/professional-cert/B76TUGSEVMPR?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof",
     icon: <Layers className="h-6 w-6" />,
   },
 ]

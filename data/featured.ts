@@ -10,7 +10,7 @@ export interface Featured {
 
 export const featuredItems: Featured[] = [
   {
-    title: "Mengenal Pelanggan Lebih Dalam: Segmentasi Pelanggan untuk Meningkatkan Efektivitas Pemasaran",
+    title: "Knowing Customers Deeper: Customer Segmentation to Improve Marketing Effectiveness",
     description:
         "This session unveils practical approaches to elevate marketing efficiency, moving from core concepts to actionable insights.",
     image: "/featured/event-SMKDEV.png?height=400&width=600",

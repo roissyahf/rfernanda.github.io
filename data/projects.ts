@@ -177,7 +177,7 @@ Based on these insights, Vidtribe should prioritize the following actions to red
       "Segment customers using RFM analysis to enhance marketing strategies and improve customer retention.",
     image: "/projects/mixed-rfm/cover-rfmanalysis.jpg?height=400&width=600",
     tags: ["RFM Analysis", "Customer Segmentation", "Customer Retention", "E-Commerce"],
-    categories: ["machine-learning", "visualization"],
+    categories: ["visualization"],
     date: "May 2024",
     fullDescription: `
     `,
@@ -229,7 +229,7 @@ Under the period of February 2017 to August 2018, 96.648% of Olist customers did
     id: "bold-web-app",
     title: "Implementation of Shallow Neural Network to Detect Political News on Web App Bold",
     description:
-      "A Web App developed to predict whether the political news is hoax or valid",
+      "A Web App developed to predict whether the political news is hoax or valid.",
     image: "/projects/mixed-hoaxvalid/cover-hoaxvalid.png?height=400&width=600",
     tags: ["Hoax Prediction", "Web App", "Media & Information"],
     categories: ["deep-learning", "team-project", "applications"],
@@ -276,7 +276,7 @@ Our team comprises technology enthusiasts with expertise in Data and AI, and Ful
     id: "congestion-forecasting",
     title: "Leveraging Machine Learning for Congestion Level Prediction at 10 AI-Powered ITCS Intersections",
     description:
-      "Built a traffic congestion forecasting model for 10 AI-powered ITCS intersections using clustering, regression, and classification algorithms.",
+      "Built a traffic congestion forecasting model for 10 AI-powered ITCS intersections using Machine Learning.",
     image: "/projects/mixed-trafficc/cover-trafficcongestion.jpg?height=400&width=600",
     tags: ["Clustering", "Regression", "Classification", "Streamlit", "Transportation"],
     categories: ["machine-learning", "team-project", "applications"],
@@ -355,7 +355,7 @@ The most important features in regression and classification models are normal s
     id: "opet-android-app",
     title: "OPet - Online Diagnosis for Your Pets Disease",
     description:
-      "An Android App developed to predict pets diseases based on symptoms",
+      "An Android App developed to predict pets diseases based on symptoms.",
     image: "/projects/mixed-opet/cover-opet.jpg?height=400&width=600",
     tags: ["Disease Prediction", "Android App", "Healthcare"],
     categories: ["deep-learning", "team-project", "applications"],
@@ -416,7 +416,7 @@ For mobile development, we integrated with existing APIs via Retrofit, implement
     id: "atliqo-comparison-dashboard",
     title: "Comparison Dashboard of Pre vs. Post 5G Launch in Atliqo Telecom Company",
     description:
-      "Comparison Dashboard of Pre vs. Post 5G Launch in Atliqo Telecom Company",
+      "Comparison Dashboard of Pre vs. Post 5G Launch in Atliqo Telecom Company.",
     image: "/projects/viz-atliqo/cover-atliqo.png?height=400&width=600",
     tags: ["Comparison Performance", "Dashboard", "Telecommunication"],
     categories: ["visualization"],
