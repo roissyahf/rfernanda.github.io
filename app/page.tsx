@@ -62,18 +62,28 @@ export default function Home() {
         <Card>
           <CardContent className="p-6">
             <p className="mb-4">
-              I am a Statistics graduate with a passion for data science and machine learning. My expertise
-              includes building predictive models, developing interactive dashboards, and automating data-driven
-              processes.
+              Nanda's career path took an unexpected turn. Initially, Nanda aimed to be a chemist, but a challenging surgical experience led her to pursue statistics.
+              This shift sparked Nanda's interest in Data and AI, with the ambition of becoming a Data Scientist.
             </p>
             <p className="mb-4">
-              I am proficient in machine learning techniques such as NLP, clustering, regression and classification, as well as
-              feature selection, statistical modeling, and data processing. I leverage Python, Tableau, and Streamlit to
-              extract actionable insights from data.
+              From 2022 onwards, Nanda has dedicated herself to mastering Data Science.
+              Her learning journey includes formal training, self-study with open-source resources, developing personal projects, and participating in competitions.
+              Through consistent effort and staying updated with new developments, Nanda has gained skills in clustering, regression, classification, text analysis, and statistical modeling.
+              She is proficient in using Python, SQL, and Tableau to extract valuable insights from both structured and unstructured data, including text.
             </p>
-            <p>
-              I have successfully executed data science projects from data collection via APIs to model deployment. I am
-              a strong communicator with a talent for presenting complex findings clearly to stakeholders.
+            <p className="mb-4">
+              Nanda spent a year as a machine learning mentor, successfully guiding students through a training program.
+              Her strategic guidance resulted in an average graduation rate of 92% across the two classes she mentored.
+              Additionally, Nanda worked at a consulting firm, gaining practical experience in optimizing business processes through data science and data analytics within a team environment.
+            </p>
+            <p className="mb-4">
+              Colleagues describe Nanda as highly passionate about learning, demonstrating a "can-do" attitude and a commitment to excellence in all assignments.
+              Throughout her experiences, Nanda has developed a strong understanding of problem-solving, data processing, model building, evaluation, deployment, dashboard creation, and data management.
+            </p>
+            <p className="mb-4">
+              Nanda maintains a blog where she shares her learning experiences.
+              Her current areas of interest include MLOps, Generative AI, Supply Chain management, and Diversity, Equity, and Inclusion (DEI) issues. Nanda is actively seeking opportunities in the Data and AI field.
+              For those seeking a data-driven, inquisitive, and collaborative team member, Nanda welcomes contact.
             </p>
           </CardContent>
         </Card>

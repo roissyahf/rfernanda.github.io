@@ -10,14 +10,34 @@ export interface Featured {
 
 export const featuredItems: Featured[] = [
   {
+    title: "Mengenal Pelanggan Lebih Dalam: Segmentasi Pelanggan untuk Meningkatkan Efektivitas Pemasaran",
+    description:
+        "This session unveils practical approaches to elevate marketing efficiency, moving from core concepts to actionable insights.",
+    image: "/featured/event-SMKDEV.png?height=400&width=600",
+    url: "https://www.canva.com/design/DAGYaiDv8wo/LDeZHOKVheeNslwF0_FWvw/edit?utm_content=DAGYaiDv8wo&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+    type: "Event",
+    date: "Dec 2024",
+    source: "SMKDEV Official",
+  },
+  {
     title: "Ukir Prestasi melalui Kuliah Online di UT, Keterbatasan Bukan Penghalang Raih Kesuksesan",
     description:
-        "Check out the highlights of my university graduation, a special moment where I received appreciation from the university and becoming the graduate representative.",
+        "See the best moments from my university graduation, including university appreciation and my speech as the graduate representative.",
     image: "/featured/article-radarjember.jpg?height=400&width=600",
     url: "https://radarjember.jawapos.com/sinergi/795342102/ukir-prestasi-melalui-kuliah-online-di-ut-keterbatasan-bukan-penghalang-raih-kesuksesan#google_vignette",
     type: "Article",
     date: "Nov 2024",
     source: "Radar Jember JAWAPOS",
+  },
+  {
+    title: "Perjuangan dan Dedikasi Nanda: Kampus Merdeka Kucapai, Panggung Google AI Kugapai",
+    description:
+        "Follow my journey after participating in the Bangkit Academy. Learn about my biggest lessons and my aspirations for the future.",
+    image: "/featured/article-kemendikbuddikti.JPG?height=400&width=600",
+    url: "https://dikti.kemdikbud.go.id/kabar-dikti/kampus-kita/perjuangan-dan-dedikasi-nanda-kampus-merdeka-kucapai-panggung-google-ai-kugapai/",
+    type: "Article",
+    date: "Aug 2024",
+    source: "KEMENDIKBUD DIKTI",
   },
   {
     title: "Google AI untuk Indonesia Emas",
@@ -32,7 +52,7 @@ export const featuredItems: Featured[] = [
   {
     title: "How to Enhance Your Statistical Skills",
     description:
-        "During the session, I presented an introduction to data science and provided learning strategies for UT students. The Q&A period proved highly engaging, with enthusiastic participation and discussion.",
+        "A sharing session on enhancing statistical skills for students, featuring the introduction to the world of Data Science.",
     image: "/featured/event-statistika.jpg?height=400&width=600",
     url: "https://youtu.be/hapPJgTc24w?si=SnMSfrwLsXVxS0aa&t=1389",
     type: "Event",
@@ -42,7 +62,7 @@ export const featuredItems: Featured[] = [
   {
     title: "My Physical Condition Is Not a Barrier to My Ambition",
     description:
-        "Thrilled to share my story on the Bangkit Blog about embracing lifelong learning and its impact on my growth. Get inspired - you never know where your next adventure might take you!",
+        "Thrilled to share my story on the Bangkit Blog about embracing lifelong learning and its impact on my growth.",
     image: "/featured/article-bangkitblog.jpg?height=400&width=600",
     url: "https://blog.bangkit.academy/2024/02/my-physical-condition-is-not-barrier-to.html",
     type: "Article",
