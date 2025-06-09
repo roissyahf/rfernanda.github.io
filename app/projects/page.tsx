@@ -5,7 +5,7 @@ import { ProjectCard } from "@/components/project-card"
 import { ProjectFilter } from "@/components/project-filter"
 import { projects } from "@/data/projects"
 
-type ProjectCategory = "all" | "machine-learning" | "deep-learning" | "visualization" | "applications" | "team-project"
+type ProjectCategory = "all" | "machine-deep-learning" | "generative-ai" | "data-analysis" | "end-to-end" | "team-project"
 
 export default function ProjectsPage() {
   const [activeCategory, setActiveCategory] = useState<ProjectCategory>("all")

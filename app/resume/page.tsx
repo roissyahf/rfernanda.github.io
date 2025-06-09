@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { InteractiveSkills } from "@/components/interactive-skills"
 import { AchievementAwardCard } from "@/components/achievement-award-card"
 import { CertificationCard } from "@/components/certification-card"
-import { Code, Database, FileCode, FileSpreadsheet, Layers } from "lucide-react"
+import { Code, Database, FileCode, Layers } from "lucide-react"
 
 // Define the skills data
 const skills = [

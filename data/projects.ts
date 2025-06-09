@@ -9,7 +9,7 @@ export interface Project {
   description: string
   image: string
   tags: string[]
-  categories: ("machine-learning" | "deep-learning" | "visualization" | "applications" | "team-project")[]
+  categories: ("machine-deep-learning" | "generative-ai" | "data-analysis" | "end-to-end" | "team-project")[]
   date: string // Month, Year format
   fullDescription: string // Now supports markdown
   background: string // Now supports markdown
@@ -32,7 +32,7 @@ export const projects: Project[] = [
       "A Sentiment Analysis and Topic Modeling Approach to analyze user feedback and improve the JKN Mobile application.",
     image: "/projects/mixed-jknm/cover-jknmobile.jpg?height=400&width=600",
     tags: ["Sentiment Analysis", "Topic Modeling", "JKN Mobile App", "User Experience"],
-    categories: ["deep-learning", "visualization"],
+    categories: ["machine-deep-learning", "data-analysis"],
     date: "October 2024",
     fullDescription: `
 ## Overview
@@ -114,7 +114,7 @@ To enhance user satisfaction and address the identified issues, the following re
       "A dashboard built to visualize employee engagement within a fictional company called Vidtribe.",
     image: "/projects/viz-hranalytic/cover-hranalytics.png?height=400&width=600",
     tags: ["HR Analytics", "Attrition Rate", "People Management"],
-    categories: ["visualization"],
+    categories: ["data-analysis"],
     date: "July 2024",
     fullDescription: `
 ## Overview
@@ -177,7 +177,7 @@ Based on these insights, Vidtribe should prioritize the following actions to red
       "Segment customers using RFM analysis to enhance marketing strategies and improve customer retention.",
     image: "/projects/mixed-rfm/cover-rfmanalysis.jpg?height=400&width=600",
     tags: ["RFM Analysis", "Customer Segmentation", "Customer Retention", "E-Commerce"],
-    categories: ["visualization"],
+    categories: ["data-analysis"],
     date: "May 2024",
     fullDescription: `
     `,
@@ -232,7 +232,7 @@ Under the period of February 2017 to August 2018, 96.648% of Olist customers did
       "A Web App developed to predict whether the political news is hoax or valid.",
     image: "/projects/mixed-hoaxvalid/cover-hoaxvalid.png?height=400&width=600",
     tags: ["Hoax Prediction", "Web App", "Media & Information"],
-    categories: ["deep-learning", "team-project", "applications"],
+    categories: ["team-project", "machine-deep-learning", "end-to-end"],
     date: "October 2023",
     fullDescription: `
 ## Overview
@@ -279,7 +279,7 @@ Our team comprises technology enthusiasts with expertise in Data and AI, and Ful
       "Built a traffic congestion forecasting model for 10 AI-powered ITCS intersections using Machine Learning.",
     image: "/projects/mixed-trafficc/cover-trafficcongestion.jpg?height=400&width=600",
     tags: ["Clustering", "Regression", "Classification", "Streamlit", "Transportation"],
-    categories: ["machine-learning", "team-project", "applications"],
+    categories: ["team-project", "machine-deep-learning", "end-to-end"],
     date: "August 2023",
     fullDescription: `
 ## Overview
@@ -358,7 +358,7 @@ The most important features in regression and classification models are normal s
       "An Android App developed to predict pets diseases based on symptoms.",
     image: "/projects/mixed-opet/cover-opet.jpg?height=400&width=600",
     tags: ["Disease Prediction", "Android App", "Healthcare"],
-    categories: ["deep-learning", "team-project", "applications"],
+    categories: ["team-project", "machine-deep-learning", "end-to-end"],
     date: "June 2023",
     fullDescription: `
 ## Overview
@@ -419,7 +419,7 @@ For mobile development, we integrated with existing APIs via Retrofit, implement
       "Comparison Dashboard of Pre vs. Post 5G Launch in Atliqo Telecom Company.",
     image: "/projects/viz-atliqo/cover-atliqo.png?height=400&width=600",
     tags: ["Comparison Performance", "Dashboard", "Telecommunication"],
-    categories: ["visualization"],
+    categories: ["data-analysis"],
     date: "December 2022",
     fullDescription: `
 ## Overview

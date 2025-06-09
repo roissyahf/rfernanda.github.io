@@ -2,7 +2,7 @@
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
 
-type ProjectCategory = "all" | "machine-learning" | "deep-learning" | "visualization" | "applications" | "team-project"
+type ProjectCategory = "all" | "machine-deep-learning" | "generative-ai" | "data-analysis" | "end-to-end" | "team-project"
 
 interface ProjectFilterProps {
   onFilterChange: (category: ProjectCategory) => void
@@ -12,10 +12,10 @@ interface ProjectFilterProps {
 export function ProjectFilter({ onFilterChange, activeCategory }: ProjectFilterProps) {
   const categories: { value: ProjectCategory; label: string }[] = [
     { value: "all", label: "All" },
-    { value: "machine-learning", label: "Machine Learning" },
-    { value: "deep-learning", label: "Deep Learning" },
-    { value: "visualization", label: "Visualization" },
-    { value: "applications", label: "Applications" },
+    { value: "machine-deep-learning", label: "Machine/Deep Learning" },
+    { value: "generative-ai", label: "Generative AI" },
+    { value: "data-analysis", label: "Data Analysis" },
+    { value: "end-to-end", label: "End-to-End" },
     { value: "team-project", label: "Team Project" },
   ]
 

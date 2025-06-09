@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Github, Linkedin, Mail, ExternalLink } from "lucide-react"
+import { Github, Linkedin, Mail, ChartArea, Rss } from "lucide-react"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -44,7 +44,16 @@ export function Footer() {
               className="text-muted-foreground transition-colors hover:text-foreground"
               aria-label="Tableau"
             >
-              <ExternalLink className="h-5 w-5" />
+              <ChartArea className="h-5 w-5" />
+            </Link>
+            <Link
+              href="https://medium.com/@roissyahfernanda"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground transition-colors hover:text-foreground"
+              aria-label="Medium"
+            >
+              <Rss className="h-5 w-5" />
             </Link>
           </div>
         </div>
