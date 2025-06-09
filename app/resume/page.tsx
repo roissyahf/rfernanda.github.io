@@ -199,6 +199,12 @@ export default function ResumePage() {
                   the oil and gas sector.
                 </li>
               </ul>
+              <div className="mt-4">
+                <p className="font-medium">Skills:</p>
+                <p className="text-muted-foreground">
+                Machine Learning; SQL; Azure Databricks
+                </p>
+              </div>
             </CardContent>
           </Card>
 
@@ -228,6 +234,12 @@ export default function ResumePage() {
                   and instructor ratings of 4.8/5.0, reflecting impactful and highly satisfying mentoring.
                 </li>
               </ul>
+              <div className="mt-4">
+                <p className="font-medium">Skills:</p>
+                <p className="text-muted-foreground">
+                Active Listening; Leadership; Mentorship; Conflict Management
+                </p>
+              </div>
             </CardContent>
           </Card>
 
@@ -252,6 +264,42 @@ export default function ResumePage() {
                   the thesis.
                 </li>
               </ul>
+              <div className="mt-4">
+                <p className="font-medium">Skills:</p>
+                <p className="text-muted-foreground">
+                Scientific Research; Scientific Writing
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+          
+          {/* OMDENA */}
+          <Card>
+            <CardHeader>
+              <div className="flex flex-col justify-between gap-2 sm:flex-row">
+                <CardTitle>Data Analyst Open Source Project</CardTitle>
+                <div className="text-sm text-muted-foreground">Feb – March 2024</div>
+              </div>
+              <p className="text-muted-foreground">OMDENA India Local Chapter Challenge, Remote</p>
+            </CardHeader>
+            <CardContent>
+              <ul className="ml-6 list-disc text-muted-foreground">
+                <li>
+                  Executed literature review of 5+ research papers on social media's impact on mental health, guiding chatbot development toward the most prevalent disorders.
+                </li>
+                <li>
+                  Preprocessed 330.000 social media posts and built a sentiment model using fine-tuned XGBoost; improved accuracy by 10% compared to baseline models.
+                </li>
+                <li>
+                  Integrated the best sentiment model; enabling the chatbot to prioritize negative inputs, reducing conversation time by 5%, leading to more focused and supportive interactions.
+                </li>
+              </ul>
+              <div className="mt-4">
+                <p className="font-medium">Skills:</p>
+                <p className="text-muted-foreground">
+                Data Preprocessing; Sentiment Analysis; Qualitative Research
+                </p>
+              </div>
             </CardContent>
           </Card>
 
@@ -269,6 +317,12 @@ export default function ResumePage() {
                 Guided students in mastering the intricacies of Mathematics, Statistics, and Data Analytics; garnered
                 reviews with an average rating of 4 out of 5 stars based on student feedback.
               </p>
+              <div className="mt-4">
+                <p className="font-medium">Skills:</p>
+                <p className="text-muted-foreground">
+                Data Analysis; Business Statistics; Microsoft Excel
+                </p>
+              </div>
             </CardContent>
           </Card>
         </div>

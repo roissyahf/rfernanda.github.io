@@ -61,28 +61,28 @@ export default function Home() {
         <SectionHeading title="About Me" />
         <Card>
           <CardContent className="p-6">
-            <p className="mb-4">
+            <p className="mb-4 text-justify">
               Nanda's career path took an unexpected turn. Initially, Nanda aimed to be a chemist, but a challenging surgical experience led her to pursue statistics.
               This shift sparked Nanda's interest in Data and AI, with the ambition of becoming a Data Scientist.
             </p>
-            <p className="mb-4">
+            <p className="mb-4 text-justify">
               From 2022 onwards, Nanda has dedicated herself to mastering Data Science.
               Her learning journey includes formal training, self-study with open-source resources, developing personal projects, and participating in competitions.
               Through consistent effort and staying updated with new developments, Nanda has gained skills in clustering, regression, classification, text analysis, and statistical modeling.
               She is proficient in using Python, SQL, and Tableau to extract valuable insights from both structured and unstructured data, including text.
             </p>
-            <p className="mb-4">
+            <p className="mb-4 text-justify">
               Nanda spent a year as a machine learning mentor, successfully guiding students through a training program.
               Her strategic guidance resulted in an average graduation rate of 92% across the two classes she mentored.
               Additionally, Nanda worked at a consulting firm, gaining practical experience in optimizing business processes through data science and data analytics within a team environment.
             </p>
-            <p className="mb-4">
-              Colleagues describe Nanda as highly passionate about learning, demonstrating a "can-do" attitude and a commitment to excellence in all assignments.
-              Throughout her experiences, Nanda has developed a strong understanding of problem-solving, data processing, model building, evaluation, deployment, dashboard creation, and data management.
+            <p className="mb-4 text-justify">
+              Former colleagues describe Nanda as highly passionate about learning, demonstrating a "can-do" attitude and a commitment to excellence in all assignments.
+              Throughout her experiences, Nanda has developed a strong understanding of problem-solving, data processing, model building, evaluation, deployment, and dashboard creation.
             </p>
-            <p className="mb-4">
+            <p className="mb-4 text-justify">
               Nanda maintains a blog where she shares her learning experiences.
-              Her current areas of interest include MLOps, Generative AI, Supply Chain management, and Diversity, Equity, and Inclusion (DEI) issues. Nanda is actively seeking opportunities in the Data and AI field.
+              Her current areas of interest include MLOps, Generative AI, Supply Chain management, and puts special attention to Diversity, Equity, and Inclusion (DEI) issues. Nanda is actively seeking opportunities in the Data and AI field.
               For those seeking a data-driven, inquisitive, and collaborative team member, Nanda welcomes contact.
             </p>
           </CardContent>
