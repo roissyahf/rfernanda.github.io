@@ -24,6 +24,60 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+  // Automate Text Analysis
+{
+    id: "automate-text-analysis",
+    title: "Automate Text Insights App",
+    description:
+      "A streamlit app to automatically derive insights from raw text data",
+    image: "/projects/mixed-automate-ta/cover-automate-text-analysis.png?height=400&width=600",
+    tags: ["Text Analysis", "Prompt Engineering"],
+    categories: ["generative-ai"],
+    date: "June 2025",
+    fullDescription: `
+## Overview
+An end-to-end NLP application built to automate the analysis of raw text data.
+It extracts n-gram patterns, visualizes linguistic trends, and leverages generative AI (GPT-4o Mini) to generate contextual insights — all within an interactive dashboard, with the option to export results to PDF.
+
+    `,
+    background: `
+
+## Background
+Organizations often collect large volumes of textual feedback or user-generated content, but lack the tools to analyze it effectively.
+Manual review is inefficient and doesn't scale. This project aims to bridge that gap by delivering automated, interpretable text insights through a low-code interface.
+    `,
+    objectives: [
+"Identify and visualize frequent word patterns (bigrams, trigrams, word clouds)",
+"Automate insight generation using a lightweight LLM",
+"Enable non-technical users to explore and summarize text data effortlessly",
+"Provide downloadable reports for offline review and documentation"
+ ],
+    tools: ["NLTK", "Matplotlib", "OPEN AI API"],
+    dataSource: "No dataset used",
+    dataSourceUrl: "No dataset link available",
+    methodology: `
+
+## Methodology
+- Data Ingestion: Accepts CSV/XLSX files with raw text in a specified 'text' column
+- Text Preprocessing: Tokenization and n-gram modeling
+- Exploratory Analysis: Bigram/trigram frequency charts and word cloud visualizations
+- LLM Integration: Prompts GPT-4o Mini with statistical patterns to generate summarized insights
+- Report Generation: Renders a multi-section PDF containing visuals and bullet-point insights
+
+`,
+    links: [
+	{ title: "Repository", url: "https://github.com/roissyahf/automate-text-analysis.git" },
+	{ title: "Streamlit App", url: "https://automate-text-analysis.streamlit.app/"},
+    ],
+    conclusion: `
+## Conclusion
+The application demonstrates a scalable pipeline for deriving insights from unstructured text.
+It combines classic NLP with generative AI, delivering not just patterns but context.
+This solution can be adapted for customer feedback analysis, product reviews, or survey comments — enabling faster and more consistent decision-making from textual data.
+
+`,
+  },
+
   // JKN Mobile Project
   {
     id: "jkn-mobile-sentiment",
