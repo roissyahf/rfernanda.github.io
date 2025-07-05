@@ -11,7 +11,6 @@ const skills = [
   { name: "Machine Learning", category: "techniques" },
   { name: "Deep Learning", category: "techniques" },
   { name: "NLP", category: "techniques" },
-  { name: "Statistical Modeling", category: "techniques" },
   { name: "Feature Selection", category: "techniques" },
   { name: "Data Preprocessing", category: "techniques" },
   { name: "ETL", category: "techniques" },
@@ -19,22 +18,21 @@ const skills = [
 
   // Programming Languages/Libary
   { name: "Python", category: "programming" },
+  { name: "SQL", category: "programming" },
   { name: "Scikit-learn", category: "programming" },
   { name: "TensorFlow", category: "programming" },
   { name: "PyTorch", category: "programming" },
   { name: "Flask", category: "programming" },
-  { name: "SQL", category: "programming" },
-  { name: "Streamlit", category: "programming" },
-  { name: "MLflow", category: "programming" },
 
   // Tools
   { name: "Microsoft Excel", category: "tools" },
   { name: "Tableau", category: "tools" },
+  { name: "Streamlit", category: "tools" },
   { name: "Git", category: "tools" },
+  { name: "MLflow", category: "tools" },
   { name: "Docker", category: "tools" },
   { name: "Prometheus", category: "tools" },
-  { name: "Grafana", category: "tools" },
-  { name: "Power BI", category: "tools" }
+  { name: "Grafana", category: "tools" }
 ] as const
 
 // Define the achievements data
@@ -50,26 +48,26 @@ const achievements = [
     title: "Third Runner-up",
     organization: "Intelligo Data Competition 2023",
     date: "Oct 2023",
-    description: "Awarded third runner-up in the Intelligo Data Competition 2023.",
+    description: "Secured a top position among 70 teams by synthesizing customer insights through sentiment analysis and topic modeling, visualized via an interactive Streamlit dashboard.",
   },
   {
     title: "Top 10 Finalist",
     organization: "RISTEK Datathon 2023",
     date: "Aug 2023",
-    description: "Selected as one of the top 10 finalists in the RISTEK Datathon 2023.",
+    description: "Achieved a top ranking among 88 teams by optimizing traffic flow management through machine learning-based congestion forecasting at ten Al-powered intersections.",
   },
   {
     title: "Distinction Graduate",
     organization: "Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka",
     date: "Jun 2023",
-    description: "Graduated with distinction from the Bangkit Academy 2023 H1 cohort.",
+    description: "Recognized as a top 10% graduate out of 4709, demonstrating a strong academic foundation and proactive skill development for a successful career.",
   },
   {
     title: "Top 3 Best Projects",
     organization: "Data Science Academy Information Systems Expo 2022",
     date: "Nov 2022",
     description:
-      "Project recognized as one of the top 3 best projects in the Data Science Academy Information Systems Expo 2022.",
+      "Segmenting Indonesian provinces by COVID-19 caseloads using K-Means clustering and visualizing insights in Tableau.",
   },
 ]
 
@@ -90,18 +88,18 @@ const certifications = [
     icon: <Code className="h-6 w-6" />,
   },
   {
-    title: "Microsoft Certified: Azure Data Fundamentals",
-    issuer: "Microsoft",
-    date: "2023",
-    url: "https://learn.microsoft.com/api/credentials/share/en-us/RoissyahFernanda-1870/6F4F548BC703426D?sharingId=6E78F0C8F14683A1",
-    icon: <Database className="h-6 w-6" />,
-  },
-  {
     title: "Google Business Intellegence",
     issuer: "Google",
     date: "2024",
     url: "https://www.coursera.org/account/accomplishments/professional-cert/TEM2UT7UU684?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=prof",
     icon: <Layers className="h-6 w-6" />,
+  },
+  {
+    title: "Microsoft Certified: Azure Data Fundamentals",
+    issuer: "Microsoft",
+    date: "2023",
+    url: "https://learn.microsoft.com/api/credentials/share/en-us/RoissyahFernanda-1870/6F4F548BC703426D?sharingId=6E78F0C8F14683A1",
+    icon: <Database className="h-6 w-6" />,
   },
   {
     title: "DeepLearning.AI Natural Language Processing Specialization",
@@ -141,7 +139,7 @@ export default function ResumePage() {
           <CardHeader>
             <div className="flex flex-col justify-between gap-2 sm:flex-row">
               <CardTitle>Bachelor of Statistics</CardTitle>
-              <div className="text-sm text-muted-foreground">Feb 2020 - Apr 2024</div>
+              <div className="text-sm text-muted-foreground">Feb 2020 - April 2024</div>
             </div>
             <p className="text-muted-foreground">Universitas Terbuka Jember, East Java</p>
           </CardHeader>
@@ -160,7 +158,7 @@ export default function ResumePage() {
               <p className="font-medium">Activity:</p>
               <ul className="ml-6 list-disc text-muted-foreground">
                 <li>Speaker at the 36th Knowledge Sharing Forum Universitas Terbuka</li>
-                <li>Speaker at Bincang Mahasiswa Statistika Series One</li>
+                <li>Speaker at Statistics Student Talk Series One</li>
                 <li>Speaker at Radio UT</li>
               </ul>
             </div>
@@ -178,41 +176,11 @@ export default function ResumePage() {
       <section className="mb-12">
         <SectionHeading title="Professional Experience" />
         <div className="space-y-6">
-          {/* Accenture */}
-          <Card>
-            <CardHeader>
-              <div className="flex flex-col justify-between gap-2 sm:flex-row">
-                <CardTitle>Data Scientist</CardTitle>
-                <div className="text-sm text-muted-foreground">Dec 2024 – Feb 2025</div>
-              </div>
-              <p className="text-muted-foreground">Accenture, Remote</p>
-            </CardHeader>
-            <CardContent>
-              <ul className="ml-6 list-disc text-muted-foreground">
-                <li>
-                  Optimized bunkering operations through data analysis, modeling, and visualization, identifying key
-                  inefficiencies.
-                </li>
-                <li>Extracted actionable insights from complex datasets, driving informed decision-making.</li>
-                <li>
-                  Delivered data-driven recommendations in a collaborative consulting environment, gaining experience in
-                  the oil and gas sector.
-                </li>
-              </ul>
-              <div className="mt-4">
-                <p className="font-medium">Skills:</p>
-                <p className="text-muted-foreground">
-                Machine Learning; SQL; Azure Databricks
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-
           {/* Bangkit Academy */}
           <Card>
             <CardHeader>
               <div className="flex flex-col justify-between gap-2 sm:flex-row">
-                <CardTitle>Part-time Machine Learning Mentor</CardTitle>
+                <CardTitle>Machine Learning Mentor - Part-time</CardTitle>
                 <div className="text-sm text-muted-foreground">Feb – Dec 2024</div>
               </div>
               <p className="text-muted-foreground">
@@ -222,12 +190,12 @@ export default function ResumePage() {
             <CardContent>
               <ul className="ml-6 list-disc text-muted-foreground">
                 <li>
-                  Empowered 24 students through a structured mentorship program and a strategic learning approach;
+                  Empowered 47 students through a structured mentorship program and a strategic learning approach;
                   fostering collaboration that boosted participation by 70%.
                 </li>
                 <li>
-                  Drove clarity and progress for a machine learning cohort by facilitating daily stand-up meetings;
-                  ensuring successful coursework completion.
+                  Drove student progress and successful coursework completion by facilitating weekly consultations
+                  and providing expert guidance on machine learning projects.
                 </li>
                 <li>
                   Achieved a 92% graduation rate across two mentored batches, with average student ratings of 4.9/5.0
@@ -237,7 +205,7 @@ export default function ResumePage() {
               <div className="mt-4">
                 <p className="font-medium">Skills:</p>
                 <p className="text-muted-foreground">
-                Active Listening; Leadership; Mentorship; Conflict Management
+                Machine Learning Concepts; Mentorship & Coaching; Collaboration; Conflict Management; Leadership; Active Listening; Student Development; Performance Tracking
                 </p>
               </div>
             </CardContent>
@@ -247,7 +215,7 @@ export default function ResumePage() {
           <Card>
             <CardHeader>
               <div className="flex flex-col justify-between gap-2 sm:flex-row">
-                <CardTitle>Part-time Research and Development Assistant</CardTitle>
+                <CardTitle>Research and Development Assistant - Part-time</CardTitle>
                 <div className="text-sm text-muted-foreground">Jan – Dec 2024</div>
               </div>
               <p className="text-muted-foreground">Braincore.id, Remote</p>
@@ -255,8 +223,8 @@ export default function ResumePage() {
             <CardContent>
               <ul className="ml-6 list-disc text-muted-foreground">
                 <li>
-                  Identified relevant prior work for a groundbreaking implementation of AI/ML paper (expected in top
-                  journals) through a comprehensive narrative review with a team.
+                  Conducted a comprehensive narrative review to identify relevant prior work,
+                  significantly contributing to a groundbreaking AI/ML paper expected in top journals.
                 </li>
                 <li>
                   Reinforced a thesis student in the field of tourism, computer vision, and business intelligence by
@@ -267,7 +235,7 @@ export default function ResumePage() {
               <div className="mt-4">
                 <p className="font-medium">Skills:</p>
                 <p className="text-muted-foreground">
-                Scientific Research; Scientific Writing
+                Research & Literature Review; AI/ML Research; Scientific Writing; Computer Vision Concepts; Business Intelligence Concepts; Guidance & Support; Productivity Enhancement; Analytical Thinking
                 </p>
               </div>
             </CardContent>
@@ -277,7 +245,7 @@ export default function ResumePage() {
           <Card>
             <CardHeader>
               <div className="flex flex-col justify-between gap-2 sm:flex-row">
-                <CardTitle>Data Analyst Open Source Project</CardTitle>
+                <CardTitle>Data Analyst Open Source Project - Project-based</CardTitle>
                 <div className="text-sm text-muted-foreground">Feb – March 2024</div>
               </div>
               <p className="text-muted-foreground">OMDENA India Local Chapter Challenge, Remote</p>
@@ -297,7 +265,7 @@ export default function ResumePage() {
               <div className="mt-4">
                 <p className="font-medium">Skills:</p>
                 <p className="text-muted-foreground">
-                Data Preprocessing; Sentiment Analysis; Qualitative Research
+                Data Preprocessing; Sentiment Analysis; Machine Learning (XGBoost, Model Tuning); Qualitative Research; Research & Literature Review; Data Quality
                 </p>
               </div>
             </CardContent>
@@ -307,7 +275,7 @@ export default function ResumePage() {
           <Card>
             <CardHeader>
               <div className="flex flex-col justify-between gap-2 sm:flex-row">
-                <CardTitle>Freelance Statistics Tutor</CardTitle>
+                <CardTitle>Statistics Tutor - Freelance</CardTitle>
                 <div className="text-sm text-muted-foreground">Apr 2022 – Dec 2023</div>
               </div>
               <p className="text-muted-foreground">Livingston Research, Remote</p>
@@ -320,7 +288,7 @@ export default function ResumePage() {
               <div className="mt-4">
                 <p className="font-medium">Skills:</p>
                 <p className="text-muted-foreground">
-                Data Analysis; Business Statistics; Microsoft Excel
+                Statistics; Mathematics; Data Analytics; Microsoft Excel; Concept Simplification; Student Engagement; Feedback Provision
                 </p>
               </div>
             </CardContent>
