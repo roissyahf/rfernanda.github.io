@@ -24,6 +24,142 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+// MLOps Loan Approval Prediction System with GCP
+{
+    id: "mlops-loan-approval-prediction-system",
+    title: "MLOps Loan Approval Prediction System",
+    description:
+      "MLOps pipeline designed for Loan Approval use case",
+    image: "/projects/mixed-mlops-loanapproval/cover-mlops-loanapproval.png?height=400&width=600",
+    tags: ["MLOps", "Model Lifecycle", "Loan Approval"],
+    categories: ["machine-deep-learning", "end-to-end"],
+    date: "October 2025",
+    fullDescription: `
+## Overview
+This project implements a production-grade MLOps system that predicts loan approval outcomes based on applicant data. It integrates machine learning with modern DevOps practices, covering model training, versioning, monitoring, and deployment. The system is fully containerized and deployed on Google Cloud Run with automated CI/CD via GitHub Actions.
+    `,
+    background: `
+
+## Background
+Manual loan approval is inherently slow and costly due to repetitive human tasks and complex paperwork, which delays decisions for customers.
+
+This project demonstrates how machine learning can automate and standardize such decisions, backed by an end-to-end MLOps workflow: data versioning, model training, experiment tracking, monitoring, CI/CD, and deployment on Google Cloud Run.
+
+## Constraints
+Due to the priority scale, I haven't set up and run testing for model, data, or API components. The monitoring alert was also only for system metrics.
+
+## Key Features
+- ✅️ Microservices architecture (Frontend, API, Model, Monitoring)
+- ✅ Data versioning with DVC + DagsHub remote storage
+- ✅ Model tracking with MLflow + DagsHub Registry
+- ✅ Drift detection using Evidently
+- ✅ Containerized services with Docker & Docker Compose
+- ✅ CI/CD with GitHub Actions, Deploy using Cloud Run 
+- ✅ Structured logs for prediction audit trail
+    `,
+    objectives: [
+"Build a modular, cloud-deployed ML system using Flask, Docker, and Cloud Run",
+"Implement experiment and data versioning with MLflow and DVC stored in DagsHub",
+"Automate CI/CD workflows for continuous deployment and scalable operation",
+],
+    tools: ["Scikit-learn", "XGBoost", "DVC", "MLflow", "DagsHub", "Evidently", "Cloud Logging", "Cloud Monitoring", "Bigquery", "Docker", "Google Cloud Run", "Artifact Registry", "GitHub Actions", "HTML/CSS/JS"],
+    dataSource: "Loan Approval Classification Dataset",
+    dataSourceUrl: "https://www.kaggle.com/datasets/taweilo/loan-approval-classification-data/data",
+    methodology: `
+
+## Methodology
+
+![MLOps Loan Approval Flowchart](/projects/mixed-mlops-loanapproval/the-flow.png?height=400&width=600)
+
+It begins with preparing loan data by cleaning and preprocessing it. Then models were built, utilizing MLflow for tracking and stored into a DagsHub repository. A model that is ready for production (use in model service) will then be registered.
+
+The system separates the model, API frontend, and monitoring services into different services. These services are first built and tested thoroughly on a local machine to ensure all components function correctly. Once ready, GitHub Actions automates the process for the whole service: the Docker images are built, then pushed to Google Cloud Artifact Registry, and finally deployed to Cloud Run.
+
+The prediction results (structured logs) from the API service will be logged automatically with Cloud Logging, then sunk to BigQuery. The monitoring service (Evidently) will use these logs to detect data drift, and the report is updated daily. For the system metrics, it utilizes GCP's native Cloud Monitoring, which can also send alerts.
+
+## Potential Impact
+- **Faster, Cheaper Operations**: The system cuts approval times from days to just minutes or seconds, significantly lowering the bank's operational costs by automating time-consuming manual work.
+- **Better Risk Decisions and Fairness**: Machine learning provides a much more accurate assessment of risk, but the implementation process also requires the bank to thoroughly evaluate the system for fairness and ethical bias to ensure compliance and equitable outcomes.
+- **Reliable and Stable Deployment**: MLOps ensures the system is stable and continuously monitored for technical issues and data problems, guaranteeing the reliability of loan decisions and allowing for quick, safe updates to be deployed.
+`,
+    links: [
+	{ title: "Repository", url: "https://github.com/roissyahf/mlops-loan-approval" },
+	{ title: "Slide", url: "https://www.canva.com/design/DAG2D7C2I3Y/Di0ylEfyHVJziFhTRaPnuQ/edit?utm_content=DAG2D7C2I3Y&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"},
+    ],
+    conclusion: `
+## Conclusion
+This project demonstrates how MLOps principles can bridge the gap between model development and real-world deployment. It automates deployment and monitoring while maintaining reproducibility and scalability. Through this build, I gained deep hands-on experience in cloud infrastructure, workflow automation, and end-to-end system design.
+`,
+  },
+
+
+// ELT Yelp Business with GCP
+{
+    id: "elt-yelp-business-review",
+    title: "End-to-end Data Analytics: Yelp Business Review",
+    description:
+      "An End-to-end Data Analytics Project, from creating data pipeline to dashboarding",
+    image: "/projects/mixed-elt-yelpbusiness/cover-elt-yelpbusiness.png?height=400&width=600",
+    tags: ["ELT Pipeline", "Cloud Function", "Downstream Task", "Power BI"],
+    categories: ["data-analysis"],
+    date: "September 2025",
+    fullDescription: `
+## Overview
+This project deployed a robust, serverless Extract, Load, and Transform (ELT) pipeline on Google Cloud Platform (GCP) to automate the ingestion of Yelp review data. The system ensures data quality through key-based deduplication and specialized category standardization, making the data analysis-ready. The final result supports targeted Machine Learning (ML) analysis and provides real-time Business Intelligence (BI) reporting via Power BI.
+    `,
+    background: `
+
+## Background
+- Vast volumes of unstructured customer review text remain dormant, preventing timely business decision-making.
+- Businesses struggle to move beyond simple ratings to identify root causes of dissatisfaction (e.g., product vs. service). They lack automated pipelines for proactive customer service and data-driven investment.
+
+This project demonstrates how raw text reviews can be transformed into business-ready insights through automation, analytics, and visualization.
+
+## Constraints
+- Analysis was limited to a 600k review subset (for ELT) and a 14k subset (for intensive downstream AI) due to cloud cost and resource limitations.
+- ELT automation was focused solely on the Reviews data. Business is handled manually, and User data were excluded.
+- Visualization was constrained to Power BI due to Looker Studio trial limitations. Automated data refresh for the Power BI has not yet been configured
+
+## Key Features
+- **Event-Driven ELT Pipeline**: Automated, serverless pipeline on GCP that transforms raw JSON to a clean, partitioned BigQuery Analytics table.
+- **Hybrid Downstream Analytics**: POC for data enrichment using both VADER sentiment (fast, lexicon-based) and TF-IDF + KMeans (unsupervised themes).
+- **BI Dashboard Reporting**: Developed a Power BI Dashboard with a manual data flow from BigQuery, enabling immediate visualization and access to key customer insights.
+    `,
+    objectives: [
+"Automate Data Ingestion: Develop a cost-efficient, event-driven ELT pipeline using Cloud Functions for immediate review data processing",
+"Enforce Data Integrity: Standardize 83k+ business categories and implement key-based deduplication in BigQuery to ensure a reliable final analytics table.",
+"Deliver Actionable Insights: Enable downstream ML analysis and build a Power BI dashboard to visualize customer sentiments and category performance",
+],
+    tools: ["Cloud Functions", "BigQuery", "Cloud Storage", "Vertex AI Workbench", "Power BI"],
+    dataSource: "Yelp Open Dataset",
+    dataSourceUrl: "https://business.yelp.com/data/resources/open-dataset/",
+    methodology: `
+
+## Methodology
+
+![ELT Yelp Business Flowchart](/projects/mixed-elt-yelpbusiness/pipeline-flow.png?height=400&width=600)
+
+- **Landing Zone**: The JSON review file will be uploaded to a dedicated Cloud Storage bucket.
+- **Cloud Function 1**: It will handle the initial "Load" part of the ELT pipeline. Specifically, it will get the raw JSON data from GCS into a yelp_landing.reviews_raw table, which will be triggered if a new file is uploaded to the Cloud Storage bucket.
+- **Cloud Funtion 2**: It will handle the "Transform" logic, starting from getting distinct reviews, correcting data types, and removing null reviews, which will be triggered after Cloud Function 1 successfully run. Then, it will save the clean, transformed data to the yelp_analytics.reviews table.
+- **Downstream Task**: After the ELT, the cleansed data is used for downstream task using traditional ML methods (VADER for sentiment analysis, TF-IDF + KMeans for review theme extraction) executed via a Vertex AI Workbench script. This step extracts critical insights for a specific business segment.
+- **Power BI Dashboarding**: A manual data connection is established between the BigQuery table and a Power BI Dashboard. This setup provides stakeholders with immediate visualization of key customer insights, quality metrics, and category performance.
+
+## Potential Impact
+- **Reduced Operational Latency**: Automating the entire pipeline with Cloud Functions eliminates manual file processing and scheduling overhead, reducing the time-to-insight from hours to minutes after a new file is uploaded.
+- **Cost Efficiency in BigQuery**: By using a partitioned and clustered analytics table, the project reduces data scanned per query, translating to lower BigQuery compute and storage costs.
+- **Enhanced Data Quality and Trust**: Implementing key-based deduplication in BigQuery guarantees a single source of truth for all review records, eliminating data duplication and improving the reliability of downstream ML models and analytics.
+`,
+    links: [
+	{ title: "Repository", url: "https://github.com/roissyahf/elt-yelp-business-gcp" },
+	{ title: "Slide", url: "https://www.canva.com/design/DAG2yiP41FU/faUU95lQy3K8DK35HMzcmw/edit?utm_content=DAG2yiP41FU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"},
+    ],
+    conclusion: `
+## Conclusion
+This project successfully established a scalable, serverless data foundation that reduces time-to-insight compared to manual processing. By strategically pivoting to efficient traditional ML methods, I met delivery deadlines while still providing rich analytical output. The system is designed for iterative improvement, positioning it perfectly for future integration of automated reporting and advanced ML workflows.
+`,
+  },
+
 // Chat with your PDF
 {
     id: "chat-with-your-pdf",
