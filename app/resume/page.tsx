@@ -8,31 +8,26 @@ import { Code, Database, FileCode, Layers } from "lucide-react"
 // Define the skills data
 const skills = [
   // Techniques
-  { name: "Machine Learning", category: "techniques" },
-  { name: "Deep Learning", category: "techniques" },
-  { name: "NLP", category: "techniques" },
-  { name: "Feature Selection", category: "techniques" },
-  { name: "Data Preprocessing", category: "techniques" },
-  { name: "ETL", category: "techniques" },
-  { name: "Data Analysis", category: "techniques" },
+  { name: "Statistics: Descriptive Statistics, Hypothesis Testing, A/B Testing, Sampling Methodology", category: "techniques" },
+  { name: "Machine Learning: Supervised Learning (Regression, Classification), Unsupervised Learning (Clustering, Dimensionality Reduction, Anomaly Detection)", category: "techniques" },
+  { name: "Deep Learning: Neural Networks (GRUs, CNNs, RNNs, LSTMs, Transformers), NLP (n-grams, Word Embeddings, Text Classification, Sentiment Analysis, Topic Modeling, LLMs Concepts), CV (Image classification, Transfer Learning)", category: "techniques" },
+  { name: "Time Series Forecasting: Univariate, Multivariate", category: "techniques" },
+  { name: "Recommendation System: Content-based Filtering, Collaborative Filtering", category: "techniques" },
+  { name: "Model Lifecycle: Data Cleaning, Feature Engineering, Data Preprocessing, Model Training, Model Evaluation, Model Debugging, Model Tuning, Model Deployment, Model Monitoring", category: "techniques" },
+  { name: "Data Analytics: Dashboarding, Storytelling", category: "techniques" },
 
   // Programming Languages/Libary
-  { name: "Python", category: "programming" },
+  { name: "Python: Numpy, Pandas, Matplotlib, Scikit-learn, XGBoost, Flask, TensorFlow, Pytorch", category: "programming" },
   { name: "SQL", category: "programming" },
-  { name: "Scikit-learn", category: "programming" },
-  { name: "TensorFlow", category: "programming" },
-  { name: "PyTorch", category: "programming" },
-  { name: "Flask", category: "programming" },
 
   // Tools
-  { name: "Microsoft Excel", category: "tools" },
-  { name: "Tableau", category: "tools" },
-  { name: "Streamlit", category: "tools" },
-  { name: "Git", category: "tools" },
-  { name: "MLflow", category: "tools" },
-  { name: "Docker", category: "tools" },
-  { name: "Prometheus", category: "tools" },
-  { name: "Grafana", category: "tools" }
+  { name: "Data Visualization: Microsoft Excel, Tableau, Streamlit, Power BI", category: "tools" },
+  { name: "Database: PostgreSQL, MySQL, BigQuery, FAISS", category: "tools" },
+  { name: "Google Cloud Platform: Artifact Registry, Cloud Run, Cloud Function, Vertex AI", category: "tools" },
+  { name: "LLM: LangChain, OpenAI API", category: "tools" },
+  { name: "Experiment Tracking: MLflow", category: "tools" },
+  { name: "Monitoring: Prometheus, Grafana, Evidently", category: "tools" },
+  { name: "Version Control: GitHub, DagsHub", category: "tools" },
 ] as const
 
 // Define the achievements data
@@ -190,16 +185,19 @@ export default function ResumePage() {
             <CardContent>
               <ul className="ml-6 list-disc text-muted-foreground">
                 <li>
-                  Empowered 47 students through a structured mentorship program and a strategic learning approach;
-                  fostering collaboration that boosted participation by 70%.
+                  Mentored 47 students across 2 batches in a structured ML program, directly contributing to an exceptional 92% course graduation rate.
                 </li>
                 <li>
-                  Drove student progress and successful coursework completion by facilitating weekly consultations
-                  and providing expert guidance on machine learning projects.
+                  Ensured a high-quality learning experience by providing comprehensive support and guidance throughout the Machine Learning curriculum, reinforcing student understanding.
                 </li>
                 <li>
-                  Achieved a 92% graduation rate across two mentored batches, with average student ratings of 4.9/5.0
-                  and instructor ratings of 4.8/5.0, reflecting impactful and highly satisfying mentoring.
+                  Drove student success and project completion through weekly consultations and expert guidance on ML projects, reflected in average student ratings of 4.9/5.0.
+                </li>
+                <li>
+                  Resolved student challenges proactively by providing continuous, accessible support via one-on-one sessions and chat, ensuring effective learning progression.
+                </li>
+                <li>
+                  Boosted student engagement and learning outcomes during ILT sessions through active instructor assistance and participation strategies, evidenced by average instructor ratings of 4.8/5.0.
                 </li>
               </ul>
               <div className="mt-4">
@@ -223,13 +221,19 @@ export default function ResumePage() {
             <CardContent>
               <ul className="ml-6 list-disc text-muted-foreground">
                 <li>
-                  Conducted a comprehensive narrative review to identify relevant prior work,
-                  significantly contributing to a groundbreaking AI/ML paper expected in top journals.
+                  Directed the initial phase and development of 2 AI research papers, coordinating a team of 5 researchers and establishing the foundational structure for subsequent publication efforts.
                 </li>
                 <li>
-                  Reinforced a thesis student in the field of tourism, computer vision, and business intelligence by
-                  providing guidance and resources; resulting in a 25% increase in productivity and timely completion of
-                  the thesis.
+                  Spearheaded the end-to-end research process for 2 key papers, streamlining early-stage workflows and contributing to the advancement of project milestones.
+                </li>
+                <li>
+                  Conducted in-depth literature reviews on over 15 AI papers, establishing critical foundational knowledge that directly informed the conceptualization and initial drafts of 2 academic publications.
+                </li>
+                <li>
+                  Mentored 2 university students on their theses in computer vision and tourism, directly contributing to 100% on-schedule completion and successful defense rates for their projects.
+                </li>
+                <li>
+                  Guided a student through a Business Intelligence project, facilitating the successful design and implementation of Power BI dashboards with direct data integration from MySQL databases, enabling key insights delivery.
                 </li>
               </ul>
               <div className="mt-4">
